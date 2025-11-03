@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Relayo is your 24/7 AI receptionist that answers calls & texts, qualifies leads, and schedules into your calendar—so you close more revenue while you sleep.">
+  <meta name="keywords" content="AI receptionist, AI agent, automated scheduling, lead qualification, n8n, ElevenLabs, voice AI">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Relayo - AI that books jobs and makes you money">
+  <meta property="og:description" content="24/7 AI receptionist powered by n8n and ElevenLabs. Automate scheduling, lead capture, and customer follow-ups.">
+  <meta property="og:image" content="./assets/og.jpg">
+  <meta property="og:url" content="https://relayo.com">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Relayo - AI that books jobs and makes you money">
+  <meta name="twitter:description" content="24/7 AI receptionist powered by n8n and ElevenLabs.">
+  <meta name="twitter:image" content="./assets/og.jpg">
+
+  <title>Relayo - AI that books jobs and makes you money</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=EB+Garamond:ital,wght@1,500&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./styles.css">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Relayo",
+    "description": "24/7 AI receptionist powered by n8n and ElevenLabs",
+    "url": "https://relayo.com",
+    "logo": "https://relayo.com/assets/logo.svg"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Relayo AI Receptionist",
+    "description": "AI-powered receptionist that answers calls & texts, qualifies leads, and schedules appointments automatically",
+    "brand": {
+      "@type": "Brand",
+      "name": "Relayo"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "127"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ========================================
+       FLOATING NAVIGATION (appears on scroll)
+       ======================================== -->
+  <header class="header header--floating" role="banner">
+    <nav class="header__container" role="navigation" aria-label="Primary">
+      <a href="/" class="header__logo" aria-label="Relayo Home">Relayo</a>
+
+      <ul class="header__nav">
+        <li><a href="#features" class="header__link">Features</a></li>
+        <li><a href="#industries" class="header__link">Industries</a></li>
+        <li><a href="#customers" class="header__link">Customers</a></li>
+        <li><a href="#pricing" class="header__link">Pricing</a></li>
+        <li><a href="#resources" class="header__link">Resources</a></li>
+      </ul>
+
+      <a href="#demo" class="btn btn--primary btn--sm header__cta">Get a demo</a>
+    </nav>
+  </header>
+
+  <!-- ========================================
+       STATIC NAVIGATION (top of page)
+       ======================================== -->
+  <header class="header header--static" role="banner">
+    <nav class="header__container" role="navigation" aria-label="Primary">
+      <a href="/" class="header__logo" aria-label="Relayo Home">Relayo</a>
+
+      <ul class="header__nav">
+        <li><a href="#features" class="header__link">Features</a></li>
+        <li><a href="#industries" class="header__link">Industries</a></li>
+        <li><a href="#customers" class="header__link">Customers</a></li>
+        <li><a href="#pricing" class="header__link">Pricing</a></li>
+        <li><a href="#resources" class="header__link">Resources</a></li>
+      </ul>
+
+      <a href="#demo" class="btn btn--primary btn--sm header__cta">Get a demo</a>
+    </nav>
+  </header>
+
+  <!-- ========================================
+       2. HERO SECTION
+       ======================================== -->
+  <section class="hero section visible">
+    <div class="container">
+      <!-- Industry Selector at top -->
+      <div class="industry-selector-top">
+        <p class="industry-selector-top__label">Select your industry:</p>
+        <div class="pills pills--top">
+          <a href="index.html" class="pill active">All</a>
+          <a href="auto.html" class="pill">Auto</a>
+          <a href="wellness.html" class="pill">Aesthetics & Wellness</a>
+          <a href="home-services.html" class="pill">Home Services</a>
+          <a href="dental.html" class="pill">Dental</a>
+          <a href="retail.html" class="pill">Retail</a>
+        </div>
+      </div>
+
+      <h1 class="hero__headline" id="hero-headline">
+        AI that <em class="text-italic">books</em> jobs and <em class="text-italic">makes</em> you money.
+      </h1>
+
+      <p class="hero__subheadline" id="hero-subheadline">
+        An AI Employee that puts in the work 24/7, capturing leads instantly and converting conversations into revenue—on autopilot.
+      </p>
+
+      <div class="hero__ctas">
+        <a href="#demo" class="btn btn--animated-pill">
+          <span class="btn__text">Watch a demo</span>
+          <span class="btn__circle">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+      </div>
+
+      <!-- Demo Card with Chat Preview -->
+      <div class="hero__demo-card">
+        <div class="hero__demo-content">
+          <div class="chat-preview">
+            <div class="chat-bubble-wrapper chat-bubble-wrapper--incoming">
+              <img src="./assets/pp.jpg" alt="Customer" class="chat-avatar chat-avatar--customer">
+              <div class="chat-bubble chat-bubble--incoming">
+                Hi! I'd like to book an appointment for next Tuesday.
+              </div>
+            </div>
+            <div class="chat-bubble-wrapper chat-bubble-wrapper--outgoing">
+              <div class="chat-bubble chat-bubble--outgoing">
+                Perfect! I can help you with that. What time works best for you?
+              </div>
+              <img src="./assets/relayo-logo-circle.svg" alt="Relayo AI" class="chat-avatar chat-avatar--ai">
+            </div>
+            <div class="chat-bubble-wrapper chat-bubble-wrapper--incoming">
+              <img src="./assets/pp.jpg" alt="Customer" class="chat-avatar chat-avatar--customer">
+              <div class="chat-bubble chat-bubble--incoming">
+                Morning would be great, around 10 AM?
+              </div>
+            </div>
+            <div class="chat-bubble-wrapper chat-bubble-wrapper--outgoing">
+              <div class="chat-bubble chat-bubble--outgoing">
+                Great news! I've scheduled you for Tuesday at 10:00 AM. You'll receive a confirmation email shortly.
+              </div>
+              <img src="./assets/relayo-logo-circle.svg" alt="Relayo AI" class="chat-avatar chat-avatar--ai">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       3. LOGOS STRIP
+       ======================================== -->
+  <section class="logos" aria-label="Trusted by leading companies">
+    <div class="container">
+      <div class="logos__grid">
+        <div class="logos__item">
+          <img src="./assets/logos/logo-1.svg" alt="Company logo" width="120" height="40" loading="lazy">
+        </div>
+        <div class="logos__item">
+          <img src="./assets/logos/logo-2.svg" alt="Company logo" width="120" height="40" loading="lazy">
+        </div>
+        <div class="logos__item">
+          <img src="./assets/logos/logo-3.svg" alt="Company logo" width="120" height="40" loading="lazy">
+        </div>
+        <div class="logos__item">
+          <img src="./assets/logos/logo-4.svg" alt="Company logo" width="120" height="40" loading="lazy">
+        </div>
+        <div class="logos__item">
+          <img src="./assets/logos/logo-5.svg" alt="Company logo" width="120" height="40" loading="lazy">
+        </div>
+        <div class="logos__item">
+          <img src="./assets/logos/logo-6.svg" alt="Company logo" width="120" height="40" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       4. RELAYO WALKTHROUGH (Podium-style)
+       ======================================== -->
+  <section class="section" id="relayo-walkthrough" style="background: var(--color-surface-alt);">
+    <div class="container">
+      <h2 class="section-title">AI that grows sales and service.</h2>
+      <p class="walkthrough__subtitle" style="color: var(--color-muted); text-align: center; margin-bottom: var(--spacing-2xl);">
+        Relayo's AI Employee helps businesses convert more leads, book more appointments, and follow up on sales and service with minimal effort.
+      </p>
+
+      <div class="walkthrough__grid">
+        <!-- Left Column: Visual -->
+        <div class="walkthrough-visual" aria-live="polite" aria-atomic="true">
+          <!-- Step 1: Inbox -->
+          <div class="walkthrough-visual__step" data-step="0" style="display: block; opacity: 1; transform: translateX(0);">
+            <div class="inbox-preview">
+              <div class="inbox-preview__header">
+                <div class="inbox-preview__icon">📬</div>
+                <span class="inbox-preview__badge">7</span>
+              </div>
+              <div class="inbox-preview__items">
+                <div class="inbox-item">
+                  <div class="inbox-item__icon inbox-item__icon--call">📞</div>
+                  <div class="inbox-item__content">
+                    <div class="inbox-item__source">New Lead - Phone Call</div>
+                    <div class="inbox-item__message">Hi! Can I schedule a service appointment?</div>
+                  </div>
+                </div>
+                <div class="inbox-item">
+                  <div class="inbox-item__icon inbox-item__icon--sms">💬</div>
+                  <div class="inbox-item__content">
+                    <div class="inbox-item__source">Sarah Chen - New Text</div>
+                    <div class="inbox-item__message">I'd like to book an appointment for next Tuesday...</div>
+                  </div>
+                </div>
+                <div class="inbox-item">
+                  <div class="inbox-item__icon inbox-item__icon--chat">💭</div>
+                  <div class="inbox-item__content">
+                    <div class="inbox-item__source">New Lead - Website Chat</div>
+                    <div class="inbox-item__message">What services do you offer?</div>
+                  </div>
+                </div>
+                <div class="inbox-item">
+                  <div class="inbox-item__icon inbox-item__icon--form">📝</div>
+                  <div class="inbox-item__content">
+                    <div class="inbox-item__source">Mike Johnson - Contact Form</div>
+                    <div class="inbox-item__message">Requesting an estimate for home repair...</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2: Chat Conversation -->
+          <div class="walkthrough-visual__step" data-step="1" style="display: none;">
+            <div class="chat-conversation">
+              <div class="chat-bubble chat-bubble--incoming">
+                <img src="./assets/pp.jpg" alt="Customer" class="chat-bubble__avatar chat-bubble__avatar--image">
+                <div class="chat-bubble__content">
+                  I need an estimate. Would someone be able to come and have a look tomorrow?
+                </div>
+              </div>
+              <div class="chat-bubble chat-bubble--outgoing">
+                <div class="chat-bubble__content">
+                  Hi, we can definitely provide you with an estimate. Does tomorrow at 2pm work for you?
+                </div>
+                <img src="./assets/relayo-logo-circle.svg" alt="Relayo AI" class="chat-bubble__ai-badge">
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3: Workflow + Reply -->
+          <div class="walkthrough-visual__step" data-step="2" style="display: none;">
+            <div class="workflow-preview">
+              <div class="workflow-card">
+                <div class="workflow-card__icon">⏳</div>
+                <div class="workflow-card__title">Wait 1 day</div>
+              </div>
+              <div class="workflow-card">
+                <div class="workflow-card__icon">⚡</div>
+                <div class="workflow-card__title">Send an AI follow-up message</div>
+                <div class="workflow-card__time">At 9:00 AM</div>
+              </div>
+            </div>
+            <div class="chat-bubble chat-bubble--incoming workflow-response-bubble" style="margin-top: var(--spacing-md);">
+              <img src="./assets/pp.jpg" alt="Customer" class="chat-bubble__avatar chat-bubble__avatar--image">
+              <div class="chat-bubble__content">
+                That time works.
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 4: Review Card -->
+          <div class="walkthrough-visual__step" data-step="3" style="display: none;">
+            <div class="review-card">
+              <div class="review-card__header">
+                <img src="./assets/pp.jpg" alt="Angela Cortez" class="review-card__avatar">
+                <div class="review-card__info">
+                  <div class="review-card__name">Angela Cortez</div>
+                  <div class="review-card__stars">★★★★★</div>
+                </div>
+              </div>
+              <div class="review-card__text">
+                Jerry was easy to work with and promptly provided an estimate and got me scheduled quickly. He was professional and efficient.
+              </div>
+              <div class="review-card__reply">
+                <div class="review-card__reply-header">
+                  <img src="./assets/relayo-logo-circle.svg" alt="Relayo AI" class="review-card__reply-icon">
+                  <span class="review-card__reply-name">Relayo AI Assistant</span>
+                  <span class="review-card__reply-time">• 2 mins ago</span>
+                </div>
+                <div class="review-card__reply-text">
+                  Thanks for the positive feedback! It was a pleasure working with you.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Accordion -->
+        <div class="walkthrough-accordion">
+          <!-- Item 1 -->
+          <div class="walkthrough-item" data-index="0">
+            <button class="walkthrough-item__header" role="button" aria-expanded="true" aria-controls="walkthrough-content-0">
+              <div class="walkthrough-item__icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              <span class="walkthrough-item__title" data-walkthrough-title="0">Capture every inquiry.</span>
+              <svg class="walkthrough-item__caret" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="18 15 12 9 6 15"/>
+              </svg>
+            </button>
+            <div class="walkthrough-item__content" id="walkthrough-content-0">
+              <p class="walkthrough-item__description" data-walkthrough-desc="0">
+                See calls, texts, chat, and web forms in one inbox—nothing slips through the cracks.
+              </p>
+              <div class="progress">
+                <div class="progress__bar"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="walkthrough-item" data-index="1">
+            <button class="walkthrough-item__header" role="button" aria-expanded="false" aria-controls="walkthrough-content-1">
+              <div class="walkthrough-item__icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                </svg>
+              </div>
+              <span class="walkthrough-item__title" data-walkthrough-title="1">Convert in under a minute.</span>
+              <svg class="walkthrough-item__caret" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="walkthrough-item__content" id="walkthrough-content-1" style="display: none;">
+              <p class="walkthrough-item__description" data-walkthrough-desc="1">
+                Instant replies with smart qualification and booking built in—typically in &lt;60 seconds.
+              </p>
+              <div class="progress">
+                <div class="progress__bar"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="walkthrough-item" data-index="2">
+            <button class="walkthrough-item__header" role="button" aria-expanded="false" aria-controls="walkthrough-content-2">
+              <div class="walkthrough-item__icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M3 3v18h18"/>
+                  <path d="M7 16l4-4 4 4 6-6"/>
+                </svg>
+              </div>
+              <span class="walkthrough-item__title" data-walkthrough-title="2">Bring customers back automatically.</span>
+              <svg class="walkthrough-item__caret" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="walkthrough-item__content" id="walkthrough-content-2" style="display: none;">
+              <p class="walkthrough-item__description" data-walkthrough-desc="2">
+                Friendly follow-ups and win-backs run on autopilot to keep your calendar full.
+              </p>
+              <div class="progress">
+                <div class="progress__bar"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="walkthrough-item" data-index="3">
+            <button class="walkthrough-item__header" role="button" aria-expanded="false" aria-controls="walkthrough-content-3">
+              <div class="walkthrough-item__icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                </svg>
+              </div>
+              <span class="walkthrough-item__title" data-walkthrough-title="3">Get found & chosen online.</span>
+              <svg class="walkthrough-item__caret" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="walkthrough-item__content" id="walkthrough-content-3" style="display: none;">
+              <p class="walkthrough-item__description" data-walkthrough-desc="3">
+                Request reviews at the right moments and reply fast to rank higher and win trust.
+              </p>
+              <div class="progress">
+                <div class="progress__bar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA Button -->
+      <div class="walkthrough__cta">
+        <a href="#demo" class="btn btn--animated-pill">
+          <span class="btn__text">Watch a demo</span>
+          <span class="btn__circle">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       5. HOW IT WORKS - RELAYO AI STYLE (REVEAL EFFECT)
+       ======================================== -->
+
+  <!-- reveal: Section 1 - Handle customer service end-to-end -->
+  <section class="reveal-section reveal-section--hero" data-reveal id="hero-service" style="background: #FFFFFF;">
+    <div class="reveal-inner">
+      <div class="container">
+        <div class="conduit-section__content" style="text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+          <div style="max-width: 900px;">
+            <h2 class="conduit-section__title" style="font-size: clamp(2rem, 4vw, 2.5rem); margin-bottom: var(--spacing-md);">Handle customer service end-to-end</h2>
+            <p class="conduit-section__description" style="font-size: 1.125rem; max-width: 100%; color: var(--color-muted);">
+              Relayo AI keeps your team focused by intelligently managing communications and escalating only the critical moments.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- reveal: Section 2 - Build your workflows -->
+  <section class="reveal-section" data-reveal id="define-processes" style="background: #F7F9FC;">
+    <div class="reveal-inner">
+      <div class="container">
+        <div class="conduit-section__content">
+          <div class="conduit-section__text">
+            <div class="conduit-section__tag">⚡ Smart Workflows</div>
+            <h2 class="conduit-section__title">Build your workflows</h2>
+            <p class="conduit-section__description">
+              Design multi-step automated conversations that work across every channel seamlessly.
+            </p>
+          </div>
+        <div class="conduit-section__visual">
+          <div class="workflow-builder">
+            <div class="workflow-builder__header">
+              <div class="workflow-builder__tabs">
+                <span class="workflow-builder__tab">Editor</span>
+                <span class="workflow-builder__tab workflow-builder__tab--active">Runs</span>
+              </div>
+              <div class="workflow-builder__status">
+                <span class="workflow-builder__badge">Active</span>
+                Get lead to schedule a meeting
+              </div>
+            </div>
+            <div class="workflow-builder__canvas">
+              <div class="workflow-node">
+                <div class="workflow-node__icon">⚡</div>
+                <div class="workflow-node__content">
+                  <div class="workflow-node__label">Trigger</div>
+                  <div class="workflow-node__title">Website visited</div>
+                  <div class="workflow-node__subtitle">Prospect visited our blog page</div>
+                </div>
+              </div>
+              <div class="workflow-connector"></div>
+              <div class="workflow-node">
+                <div class="workflow-node__icon">👤</div>
+                <div class="workflow-node__content">
+                  <div class="workflow-node__label">Contact</div>
+                  <div class="workflow-node__title">Enrich Contact</div>
+                  <div class="workflow-node__subtitle">Enrich contact and create a record</div>
+                </div>
+              </div>
+              <div class="workflow-connector"></div>
+              <div class="workflow-node">
+                <div class="workflow-node__icon">🔀</div>
+                <div class="workflow-node__content">
+                  <div class="workflow-node__label">Branch</div>
+                  <div class="workflow-node__title">Branch</div>
+                  <div class="workflow-node__subtitle">Check if company employee count greater than 50</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- reveal: Section 3 - Track what matters -->
+  <section class="reveal-section" data-reveal id="feel-impact" style="background: #FFFFFF;">
+    <div class="reveal-inner">
+      <div class="container">
+      <div class="conduit-section__content conduit-section__content--reverse">
+        <div class="conduit-section__text">
+          <div class="conduit-section__tag">📈 Analytics & Performance</div>
+          <h2 class="conduit-section__title">Track what matters</h2>
+          <p class="conduit-section__description">
+            Real-time insights to monitor performance, spot trends, and continuously improve your customer interactions.
+          </p>
+        </div>
+        <div class="conduit-section__visual">
+          <div class="analytics-dashboard">
+            <div class="analytics-dashboard__controls">
+              <select class="analytics-dashboard__select">
+                <option>Last 7 days</option>
+              </select>
+              <span class="analytics-dashboard__text">compared to</span>
+              <select class="analytics-dashboard__select">
+                <option>Previous period: Aug 22, 2025 - Aug 29, 2025</option>
+              </select>
+            </div>
+            <div class="analytics-dashboard__metrics">
+              <div class="analytics-metric">
+                <div class="analytics-metric__header">
+                  <span class="analytics-metric__title">AI automation rate</span>
+                  <span class="analytics-metric__change">-8.1%</span>
+                </div>
+                <div class="analytics-metric__value">70.6%</div>
+                <div class="analytics-metric__comparison">78.7% previous period</div>
+                <div class="analytics-metric__chart">
+                  <svg viewBox="0 0 200 80" preserveAspectRatio="none">
+                    <path d="M 0 20 Q 50 10, 100 30 T 200 25" fill="rgba(59, 130, 246, 0.2)" stroke="rgba(59, 130, 246, 0.8)" stroke-width="2"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="analytics-metric">
+                <div class="analytics-metric__header">
+                  <span class="analytics-metric__title">Open ticket count</span>
+                </div>
+                <div class="analytics-metric__value">133</div>
+                <div class="analytics-metric__comparison">90 previous period</div>
+              </div>
+            </div>
+            <div class="analytics-dashboard__escalations">
+              <h4 class="analytics-dashboard__subtitle">Escalations</h4>
+              <div class="escalation-bar">
+                <div class="escalation-bar__segment" style="width: 52.8%; background: #FCD34D;"></div>
+                <div class="escalation-bar__segment" style="width: 27.8%; background: #FBBF24;"></div>
+                <div class="escalation-bar__segment" style="width: 19.4%; background: #F87171;"></div>
+              </div>
+              <div class="escalation-list">
+                <div class="escalation-item">
+                  <span class="escalation-item__dot" style="background: #FCD34D;"></span>
+                  <span class="escalation-item__label">AI missing info</span>
+                  <span class="escalation-item__value">19 (52.8%)</span>
+                </div>
+                <div class="escalation-item">
+                  <span class="escalation-item__dot" style="background: #FBBF24;"></span>
+                  <span class="escalation-item__label">AI needs your help</span>
+                  <span class="escalation-item__value">10 (27.8%)</span>
+                </div>
+                <div class="escalation-item">
+                  <span class="escalation-item__dot" style="background: #F87171;"></span>
+                  <span class="escalation-item__label">Urgent tagged</span>
+                  <span class="escalation-item__value">7 (19.4%)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- reveal: Section 4 - One inbox, total control -->
+  <section class="reveal-section" data-reveal id="unified-inbox" style="background: #F7F9FC;">
+    <div class="reveal-inner">
+      <div class="container">
+      <div class="conduit-section__content">
+        <div class="conduit-section__text">
+          <div class="conduit-section__tag">💬 Unified Communication Hub</div>
+          <h2 class="conduit-section__title">One inbox, total control</h2>
+          <p class="conduit-section__description">
+            Where AI automation pauses, your team takes over — manage every conversation in one centralized platform. Train your AI from the inbox and scale effortlessly.
+          </p>
+        </div>
+        <div class="conduit-section__visual">
+          <div class="unified-inbox">
+            <div class="unified-inbox__header">
+              <div class="unified-inbox__user">
+                <div class="unified-inbox__avatar">👤</div>
+                <div class="unified-inbox__user-info">
+                  <div class="unified-inbox__user-name">Will Garman</div>
+                  <div class="unified-inbox__notes">
+                    <span>📝 3 Notes</span>
+                    <span>+ Add note</span>
+                    <span>+ Add knowledge</span>
+                  </div>
+                </div>
+              </div>
+              <div class="unified-inbox__actions">
+                <button class="unified-inbox__action">🔄</button>
+                <button class="unified-inbox__action">📞</button>
+                <button class="unified-inbox__action">📋</button>
+              </div>
+            </div>
+            <div class="unified-inbox__timeline">
+              <div class="unified-inbox__date">YESTERDAY</div>
+              <div class="unified-inbox__message">
+                <div class="unified-inbox__message-avatar">👤</div>
+                <div class="unified-inbox__message-content">
+                  <div class="unified-inbox__message-header">
+                    <span class="unified-inbox__message-name">Will Garman</span>
+                    <span class="unified-inbox__message-time">2:18 PM • 2:18 PM</span>
+                  </div>
+                  <div class="unified-inbox__message-label">Customer Support</div>
+                  <div class="unified-inbox__message-text">Hi there, I'm Alex from Relayo Support. How can we help?</div>
+                </div>
+              </div>
+              <div class="unified-inbox__date">TODAY</div>
+              <div class="unified-inbox__message">
+                <div class="unified-inbox__message-avatar">👤</div>
+                <div class="unified-inbox__message-content">
+                  <div class="unified-inbox__message-header">
+                    <span class="unified-inbox__message-name">Will Garman</span>
+                    <span class="unified-inbox__message-time">2:18 PM • 2:18 PM</span>
+                  </div>
+                  <div class="unified-inbox__message-label">🎫 Trip Modification</div>
+                  <div class="unified-inbox__message-text">I was wondering if I can extend my upcoming stay to checkout one day later??</div>
+                </div>
+              </div>
+              <div class="unified-inbox__status">
+                <div class="unified-inbox__status-badge">✅ Availability lookup successful</div>
+                <div class="unified-inbox__status-details">
+                  Property: 230CALST<br>
+                  Date: 04/10/2025<br>
+                  Status: Available
+                </div>
+              </div>
+            </div>
+            <div class="unified-inbox__sidebar">
+              <div class="unified-inbox__sidebar-section">
+                <h4>At a glance</h4>
+                <div class="unified-inbox__stat">
+                  <span class="unified-inbox__stat-label">During Stay</span>
+                  <div class="unified-inbox__stat-timeline">
+                    <span>BEFORE</span>
+                    <span>DURING</span>
+                  </div>
+                </div>
+                <div class="unified-inbox__status-message">
+                  ✨ Will is doing pretty well.
+                  <p class="unified-inbox__status-detail">The guest is coming for an upcoming stay and wants to extend their stay.</p>
+                </div>
+              </div>
+              <div class="unified-inbox__sidebar-section">
+                <h4>Conversation tags</h4>
+                <div class="unified-inbox__tags">
+                  <span class="unified-inbox__tag">🔴 Access Issue</span>
+                  <span class="unified-inbox__tag">🔵 Extend Request</span>
+                </div>
+              </div>
+              <div class="unified-inbox__sidebar-section">
+                <h4>Conversation</h4>
+                <div class="unified-inbox__booking">
+                  <div class="unified-inbox__booking-image"></div>
+                  <div class="unified-inbox__booking-name">Winterfell Castle</div>
+                  <div class="unified-inbox__booking-date">04/09/2025</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       6. PRODUCTION-READY AGENTS - RELAYO AI STYLE
+       ======================================== -->
+  <section class="agents section" id="agents" style="background: #FFFFFF;">
+    <div class="container">
+      <div class="agents__header">
+        <h2 class="agents__title">Enterprise-grade AI agents</h2>
+        <p class="agents__subtitle">With Relayo AI, your agents evolve continuously—learning from every interaction and expanding capabilities like your best team members.</p>
+      </div>
+
+      <div class="agents__showcase">
+        <!-- Top Row -->
+        <div class="agent-showcase-row">
+          <!-- Knowledge Base Syncing -->
+          <div class="agent-showcase-card">
+            <div class="agent-showcase-card__header">
+              <div class="agent-showcase-card__icon">📚</div>
+              <h3 class="agent-showcase-card__title">Smart Knowledge Sync</h3>
+            </div>
+            <p class="agent-showcase-card__description">
+              Connect your docs, FAQs, and resources with automatic syncing to keep AI responses always current.
+            </p>
+          </div>
+
+          <!-- Conversational Context -->
+          <div class="agent-showcase-card">
+            <div class="agent-showcase-card__header">
+              <div class="agent-showcase-card__icon">💬</div>
+              <h3 class="agent-showcase-card__title">Complete Conversation History</h3>
+            </div>
+            <p class="agent-showcase-card__description">
+              Every message, call, and interaction unified in one timeline for full context and seamless handoffs.
+            </p>
+          </div>
+        </div>
+
+        <!-- Voice AI - Large Card -->
+        <div class="agent-feature-card">
+          <div class="agent-feature-card__header">
+            <div class="agent-feature-card__icon">🎙️</div>
+            <h3 class="agent-feature-card__title">Natural Voice AI</h3>
+            <p class="agent-feature-card__description">Deploy intelligent voice agents that sound human, answer calls instantly, and engage customers around the clock.</p>
+          </div>
+          <div class="agent-feature-card__demo">
+            <div class="voice-call-preview">
+              <div class="voice-call-preview__header">
+                <span class="voice-call-preview__title">📞 Incoming Call</span>
+                <span class="voice-call-preview__time">11:58 PM</span>
+              </div>
+              <div class="voice-call-preview__audio">
+                <button class="voice-call-preview__play">▶</button>
+                <div class="voice-call-preview__waveform"></div>
+                <span class="voice-call-preview__duration">0:00 / 0:06</span>
+              </div>
+              <div class="voice-call-preview__summary">
+                <h4>Call Summary</h4>
+                <p>The customer inquired about booking a suite for the upcoming weekend stay. In addition, they requested a table reservation at the on-site steakhouse for their family later this week. During the...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Row -->
+        <div class="agent-showcase-row">
+          <!-- Policy Compliant -->
+          <div class="agent-showcase-card">
+            <div class="agent-showcase-card__header">
+              <div class="agent-showcase-card__icon">✅</div>
+              <h3 class="agent-showcase-card__title">Rules & Compliance</h3>
+            </div>
+            <p class="agent-showcase-card__description">
+              Guarantee your AI adheres to company protocols and safeguards confidential information at every step.
+            </p>
+            <div class="agent-showcase-card__example">
+              <div class="evaluation-result">
+                <div class="evaluation-result__header">
+                  <span class="evaluation-result__icon">❌ Failed</span>
+                  <span class="evaluation-result__date">9/7/2025, 4:35:19 PM</span>
+                </div>
+                <h5>Generated Response</h5>
+                <p class="evaluation-result__text">Hi Cody, It looks like your message may not have come through fully. Could you let me know how I can help?</p>
+                <h5>Evaluation Reasoning</h5>
+                <p class="evaluation-result__reasoning">The generated response attempts to clarify the request, which is a reasonable strategy wh...</p>
+              </div>
+              <div class="evaluation-result evaluation-result--pass">
+                <div class="evaluation-result__header">
+                  <span class="evaluation-result__icon evaluation-result__icon--pass">✅ Passed</span>
+                  <span class="evaluation-result__date">9/7/2025, 4:35:19 PM</span>
+                </div>
+                <h5>Generated Response</h5>
+                <p class="evaluation-result__text">Hi Cody, It looks like your message may not have come through fully. Could you let me know how I can help?</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Custom Tools -->
+          <div class="agent-showcase-card">
+            <div class="agent-showcase-card__header">
+              <div class="agent-showcase-card__icon">🔧</div>
+              <h3 class="agent-showcase-card__title">Custom Integrations</h3>
+            </div>
+            <p class="agent-showcase-card__description">
+              Equip your AI with custom tools to execute actions and pull data from any connected platform.
+            </p>
+            <div class="agent-showcase-card__example">
+              <div class="tool-execution">
+                <div class="tool-execution__header">
+                  <span class="tool-execution__icon">⚙️</span>
+                  <span class="tool-execution__title">Using Tool - Order Lookup</span>
+                </div>
+                <div class="tool-execution__result">
+                  <div class="tool-execution__success">
+                    <span class="tool-execution__check">✅</span>
+                    <span class="tool-execution__label">Order lookup successful</span>
+                  </div>
+                  <div class="tool-execution__details">
+                    <p><strong>Order number:</strong> #230CALST</p>
+                    <p><strong>Delivery date:</strong> July 19th</p>
+                    <p><strong>Product:</strong> Dress shoes</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stress Test Scenarios -->
+          <div class="agent-showcase-card">
+            <div class="agent-showcase-card__header">
+              <div class="agent-showcase-card__icon">🧪</div>
+              <h3 class="agent-showcase-card__title">Pre-Launch Testing</h3>
+            </div>
+            <p class="agent-showcase-card__description">
+              Test every edge case and scenario in a safe environment before your AI meets real customers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       7. INTEGRATIONS
+       ======================================== -->
+  <section class="integrations section" id="integrations">
+    <div class="container">
+      <div class="integrations__header">
+        <h2 class="integrations__title">Integrate with every aspect of your tech stack</h2>
+        <p class="integrations__subtitle">Give your AI the tools to succeed, backed by enterprise-grade security and seamless automation.</p>
+      </div>
+
+      <div class="integrations__grid">
+        <div class="integration-card">
+          <img src="https://cdn.simpleicons.org/googlecalendar/4285F4" alt="Google Calendar" class="integration-card__logo">
+          <div class="integration-card__name">Google Calendar</div>
+        </div>
+        <div class="integration-card">
+          <img src="https://cdn.simpleicons.org/googlesheets/34A853" alt="Google Sheets" class="integration-card__logo">
+          <div class="integration-card__name">Google Sheets</div>
+        </div>
+        <div class="integration-card">
+          <img src="https://cdn.simpleicons.org/gmail/EA4335" alt="Gmail" class="integration-card__logo">
+          <div class="integration-card__name">Gmail</div>
+        </div>
+        <div class="integration-card">
+          <img src="https://cdn.simpleicons.org/notion/000000" alt="Notion" class="integration-card__logo">
+          <div class="integration-card__name">Notion</div>
+        </div>
+        <div class="integration-card">
+          <img src="https://cdn.simpleicons.org/slack/4A154B" alt="Slack" class="integration-card__logo">
+          <div class="integration-card__name">Slack</div>
+        </div>
+        <div class="integration-card">
+          <img src="https://cdn.simpleicons.org/twilio/F22F46" alt="Twilio" class="integration-card__logo">
+          <div class="integration-card__name">Twilio</div>
+        </div>
+        <div class="integration-card">
+          <img src="https://cdn.simpleicons.org/whatsapp/25D366" alt="WhatsApp" class="integration-card__logo">
+          <div class="integration-card__name">WhatsApp</div>
+        </div>
+        <div class="integration-card">
+          <img src="https://cdn.simpleicons.org/n8n/EA4B71" alt="n8n" class="integration-card__logo">
+          <div class="integration-card__name">n8n</div>
+        </div>
+        <div class="integration-card">
+          <img src="https://cdn.simpleicons.org/zapier/FF4A00" alt="Zapier" class="integration-card__logo">
+          <div class="integration-card__name">Zapier</div>
+        </div>
+        <div class="integration-card">
+          <img src="https://cdn.simpleicons.org/shopify/7AB55C" alt="Shopify" class="integration-card__logo">
+          <div class="integration-card__name">Shopify</div>
+        </div>
+        <div class="integration-card">
+          <img src="https://cdn.simpleicons.org/stripe/008CDD" alt="Stripe" class="integration-card__logo">
+          <div class="integration-card__name">Stripe</div>
+        </div>
+        <div class="integration-card">
+          <img src="https://cdn.simpleicons.org/hubspot/FF7A59" alt="HubSpot" class="integration-card__logo">
+          <div class="integration-card__name">HubSpot</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       8. CUSTOMER QUOTES
+       ======================================== -->
+  <section class="testimonials section" id="customers">
+    <div class="container">
+      <h2 class="testimonials__title">What our customers say</h2>
+
+      <div class="testimonials__grid">
+        <!-- Testimonial 1 -->
+        <div class="testimonial">
+          <blockquote class="testimonial__quote">
+            "Relayo has transformed how we handle incoming leads. We're booking 3x more appointments without adding staff."
+          </blockquote>
+          <div class="testimonial__author">
+            <img src="./assets/pp.jpg" alt="Sarah Chen" class="testimonial__avatar">
+            <div class="testimonial__info">
+              <div class="testimonial__name">Sarah Chen</div>
+              <div class="testimonial__role">Owner, Elite Auto Detail</div>
+            </div>
+          </div>
+          <div class="testimonial__kpi">+180% appointment bookings</div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial">
+          <blockquote class="testimonial__quote">
+            "The voice AI sounds incredibly natural. Our customers don't even realize they're talking to a bot until we tell them."
+          </blockquote>
+          <div class="testimonial__author">
+            <img src="./assets/pp.jpg" alt="Michael Rodriguez" class="testimonial__avatar">
+            <div class="testimonial__info">
+              <div class="testimonial__name">Michael Rodriguez</div>
+              <div class="testimonial__role">Director, Radiant Wellness Spa</div>
+            </div>
+          </div>
+          <div class="testimonial__kpi">98% customer satisfaction</div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial">
+          <blockquote class="testimonial__quote">
+            "We went from missing 40% of after-hours calls to capturing every single lead. The ROI was immediate."
+          </blockquote>
+          <div class="testimonial__author">
+            <img src="./assets/pp.jpg" alt="James Patterson" class="testimonial__avatar">
+            <div class="testimonial__info">
+              <div class="testimonial__name">James Patterson</div>
+              <div class="testimonial__role">CEO, QuickFix Plumbing</div>
+            </div>
+          </div>
+          <div class="testimonial__kpi">100% lead capture rate</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       9. CTA BAND
+       ======================================== -->
+  <section class="cta-band" id="demo">
+    <h2 class="cta-band__title">
+      See Relayo book your next 10 appointments automatically.
+    </h2>
+    <a href="#contact" class="btn btn--primary">Get a demo</a>
+  </section>
+
+  <!-- ========================================
+       10. FOOTER
+       ======================================== -->
+  <footer id="site-footer" class="footer" role="contentinfo">
+    <!-- Decorative backdrop -->
+    <div class="footer-brand-backdrop" aria-hidden="true">Relayo</div>
+
+    <!-- Footer content -->
+    <div class="footer__wrapper">
+      <div class="footer__content">
+        <div class="footer__section">
+          <h5>Products</h5>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">AI Receptionist</a></li>
+            <li><a href="#" class="footer__link">Voice AI</a></li>
+            <li><a href="#" class="footer__link">Lead Qualification</a></li>
+            <li><a href="#" class="footer__link">Integrations</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__section">
+          <h5>Resources</h5>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">Documentation</a></li>
+            <li><a href="#" class="footer__link">Case Studies</a></li>
+            <li><a href="#" class="footer__link">Blog</a></li>
+            <li><a href="#" class="footer__link">API Reference</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__section">
+          <h5>Company</h5>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">About Us</a></li>
+            <li><a href="#" class="footer__link">Careers</a></li>
+            <li><a href="#" class="footer__link">Contact</a></li>
+            <li><a href="#" class="footer__link">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__section">
+          <h5>Get Started</h5>
+          <ul class="footer__links">
+            <li><a href="#demo" class="footer__link">Book a Demo</a></li>
+            <li><a href="#pricing" class="footer__link">Pricing</a></li>
+            <li><a href="#" class="footer__link">Free Trial</a></li>
+            <li><a href="#" class="footer__link">Partner Program</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2025 Relayo. All rights reserved.</p>
+        <div class="footer__socials">
+          <a href="#" class="footer__social" aria-label="Facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </a>
+          <a href="#" class="footer__social" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+            </svg>
+          </a>
+          <a href="#" class="footer__social" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+          <a href="#" class="footer__social" aria-label="X (Twitter)">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="./script.js"></script>
+</body>
+</html>
