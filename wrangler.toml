@@ -1,0 +1,7 @@
+# Cloudflare Pages configuration for static site
+# This tells Cloudflare this is a static site, not a Worker
+
+name = "relayo"
+compatibility_date = "2025-11-03"
+pages_build_output_dir = "."
+
