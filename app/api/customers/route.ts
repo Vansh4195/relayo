@@ -3,6 +3,7 @@ import { authenticateRequest } from '@/lib/auth-middleware';
 import { prisma } from '@/lib/prisma';
 
 // GET /api/customers - List customers
+export const dynamic = 'force-dynamic';
 export async function GET(req: NextRequest) {
   const user = await authenticateRequest(req);
 
@@ -61,6 +62,7 @@ export async function GET(req: NextRequest) {
 }
 
 // POST /api/customers - Create customer
+export const dynamic = 'force-dynamic';
 export async function POST(req: NextRequest) {
   const user = await authenticateRequest(req);
 

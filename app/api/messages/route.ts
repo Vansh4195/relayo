@@ -35,6 +35,7 @@ interface MessageWithCustomer {
   } | null;
 }
 
+export const dynamic = 'force-dynamic';
 export async function GET(req: NextRequest) {
   const user = await authenticateRequest(req);
 
