@@ -62,7 +62,6 @@ export async function GET(req: NextRequest) {
 }
 
 // POST /api/customers - Create customer
-export const dynamic = 'force-dynamic';
 export async function POST(req: NextRequest) {
   const user = await authenticateRequest(req);
 
