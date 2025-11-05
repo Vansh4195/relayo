@@ -1,0 +1,128 @@
+// This is your Prisma schema file
+// Learn more: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String            @id @default(cuid())
+  firebaseUid   String            @unique
+  email         String            @unique
+  name          String?
+  createdAt     DateTime          @default(now())
+  updatedAt     DateTime          @updatedAt
+  memberships   WorkspaceMember[]
+}
+
+model Workspace {
+  id            String            @id @default(cuid())
+  name          String
+  createdAt     DateTime          @default(now())
+  updatedAt     DateTime          @updatedAt
+  members       WorkspaceMember[]
+  integrations  Integration[]
+  customers     Customer[]
+  reservations  Reservation[]
+  messages      Message[]
+}
+
+model WorkspaceMember {
+  id          String    @id @default(cuid())
+  role        String    // owner, admin, viewer
+  userId      String
+  workspaceId String
+  user        User      @relation(fields: [userId], references: [id])
+  workspace   Workspace @relation(fields: [workspaceId], references: [id])
+
+  @@unique([userId, workspaceId])
+}
+
+enum Provider {
+  GOOGLE
+  TWILIO
+  GMAIL
+}
+
+model Integration {
+  id          String   @id @default(cuid())
+  workspaceId String
+  provider    Provider
+  label       String? // e.g., "Owner's Google"
+
+  // Google OAuth (Calendar/Sheets/Gmail)
+  googleAccessToken  String?
+  googleRefreshToken String?
+  googleExpiry       DateTime?
+  googleCalendarIds  String[] // user-selected calendars
+  googleSheetsUrl    String?
+
+  // Twilio
+  twilioSid        String?
+  twilioAuthToken  String?
+  twilioFromNumber String?
+
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+  workspace    Workspace     @relation(fields: [workspaceId], references: [id])
+  reservations Reservation[]
+}
+
+model Customer {
+  id           String        @id @default(cuid())
+  workspaceId  String
+  name         String?
+  phone        String?
+  email        String?
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+  workspace    Workspace     @relation(fields: [workspaceId], references: [id])
+  reservations Reservation[]
+  messages     Message[]
+
+  @@index([phone])
+  @@index([email])
+  @@index([workspaceId])
+}
+
+model Reservation {
+  id            String        @id @default(cuid())
+  workspaceId   String
+  customerId    String?
+  integrationId String? // which Google connection created it
+  eventId       String        @unique // Google Calendar event id
+  calendarId    String
+  title         String
+  service       String?
+  staff         String?
+  source        String? // WEB, CALL, SMS, EMAIL
+  notes         String?
+  status        String // confirmed, pending, cancelled
+  start         DateTime
+  end           DateTime
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+  workspace     Workspace     @relation(fields: [workspaceId], references: [id])
+  customer      Customer?     @relation(fields: [customerId], references: [id])
+  integration   Integration?  @relation(fields: [integrationId], references: [id])
+}
+
+model Message {
+  id          String    @id @default(cuid())
+  workspaceId String
+  customerId  String?
+  direction   String // inbound/outbound
+  channel     String // sms/email
+  body        String
+  toNumber    String?
+  fromNumber  String?
+  providerId  String? // Twilio SID
+  createdAt   DateTime  @default(now())
+  workspace   Workspace @relation(fields: [workspaceId], references: [id])
+  customer    Customer? @relation(fields: [customerId], references: [id])
+}

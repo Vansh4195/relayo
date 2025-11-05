@@ -1,0 +1,72 @@
+{
+  "dependencies": {
+    "@hookform/resolvers": "^5.2.2",
+    "@opentelemetry/api": "^1.9.0",
+    "@prisma/client": "^6.18.0",
+    "@radix-ui/react-avatar": "^1.1.10",
+    "@radix-ui/react-dialog": "^1.1.15",
+    "@radix-ui/react-popover": "^1.1.15",
+    "@radix-ui/react-select": "^2.2.6",
+    "@tanstack/react-table": "^8.21.3",
+    "@types/node": "^24.10.0",
+    "@types/react": "^19.2.2",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "crypto-js": "^4.2.0",
+    "date-fns": "^4.1.0",
+    "firebase": "^12.5.0",
+    "firebase-admin": "^13.5.0",
+    "framer-motion": "^12.23.24",
+    "google-auth-library": "^10.5.0",
+    "googleapis": "^164.1.0",
+    "lucide-react": "^0.552.0",
+    "next": "^14.2.33",
+    "nodemailer": "^7.0.10",
+    "prisma": "^6.18.0",
+    "react": "^18.3.1",
+    "react-big-calendar": "^1.19.4",
+    "react-day-picker": "^9.11.1",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.66.0",
+    "recharts": "^3.3.0",
+    "tailwind-merge": "^3.3.1",
+    "twilio": "^5.10.4",
+    "typescript": "^5.9.3",
+    "zod": "^4.1.12",
+    "zustand": "^5.0.8"
+  },
+  "name": "relayo",
+  "version": "1.0.0",
+  "description": "A professional, production-ready landing page for Relayo - your 24/7 AI receptionist powered by n8n and ElevenLabs.",
+  "main": "script.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "prisma generate && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:studio": "prisma studio",
+    "prisma:seed": "tsx prisma/seed.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vansh4195/relayo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Vansh4195/relayo/issues"
+  },
+  "homepage": "https://github.com/Vansh4195/relayo#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.18"
+  }
+}
