@@ -50,7 +50,7 @@ export async function PATCH(
 
     // Update in DB
     const updated = await prisma.reservation.update({
-      where: { id: params.id },
+      where: { id },
       data: {
         status,
         start: start ? new Date(start) : undefined,
@@ -142,7 +142,7 @@ export async function DELETE(
 
     // Delete from DB
     await prisma.reservation.delete({
-      where: { id: params.id },
+      where: { id },
     });
 
     return NextResponse.json({ success: true });
