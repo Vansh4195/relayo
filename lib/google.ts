@@ -150,7 +150,7 @@ export async function listCalendarEvents(
           status: event.status || undefined,
           attendees: event.attendees?.map((a) => ({
             email: a.email!,
-            displayName: a.displayName,
+            displayName: a.displayName || undefined,
           })),
         }))
       );
