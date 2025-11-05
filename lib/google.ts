@@ -147,7 +147,7 @@ export async function listCalendarEvents(
           description: event.description || undefined,
           start: new Date(event.start?.dateTime || event.start?.date!),
           end: new Date(event.end?.dateTime || event.end?.date!),
-          status: event.status,
+          status: event.status || undefined,
           attendees: event.attendees?.map((a) => ({
             email: a.email!,
             displayName: a.displayName,
@@ -194,7 +194,7 @@ export async function createCalendarEvent(
     description: event.description || undefined,
     start: new Date(event.start?.dateTime || event.start?.date!),
     end: new Date(event.end?.dateTime || event.end?.date!),
-    status: event.status,
+    status: event.status || undefined,
   };
 }
 
@@ -228,7 +228,7 @@ export async function updateCalendarEvent(
     description: event.description || undefined,
     start: new Date(event.start?.dateTime || event.start?.date!),
     end: new Date(event.end?.dateTime || event.end?.date!),
-    status: event.status,
+    status: event.status || undefined,
   };
 }
 
