@@ -2,7 +2,10 @@ import { NextRequest, NextResponse } from 'next/server';
 import { authenticateRequest } from '@/lib/auth-middleware';
 import { prisma } from '@/lib/prisma';
 
-export async function GET(req: NextRequest, { params }: { params: { customerId: string } }) {
+export async function GET(
+  req: NextRequest,
+  { params }: { params: Promise<{ customerId: string }> }
+) {
   const user = await authenticateRequest(req);
 
   if (!user) {
@@ -13,7 +16,7 @@ export async function GET(req: NextRequest, { params }: { params: { customerId: 
   }
 
   try {
-    const { customerId } = params;
+    const { customerId } = await params;
     const workspaceId = user.workspaceId;
 
     // Verify customer belongs to workspace

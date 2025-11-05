@@ -5,7 +5,10 @@ import { updateCalendarEvent, deleteCalendarEvent } from '@/lib/google';
 import { upsertRowByEventId } from '@/lib/google';
 
 // PATCH /api/reservations/[id] - Update reservation
-export async function PATCH(req: NextRequest, { params }: { params: { id: string } }) {
+export async function PATCH(
+  req: NextRequest,
+  { params }: { params: Promise<{ id: string }> }
+) {
   const user = await authenticateRequest(req);
 
   if (!user) {
@@ -18,9 +21,10 @@ export async function PATCH(req: NextRequest, { params }: { params: { id: string
   try {
     const body = await req.json();
     const { status, start, end, notes } = body;
+    const { id } = await params;
 
     const reservation = await prisma.reservation.findUnique({
-      where: { id: params.id },
+      where: { id },
       include: { integration: true },
     });
 
@@ -96,7 +100,10 @@ export async function PATCH(req: NextRequest, { params }: { params: { id: string
 }
 
 // DELETE /api/reservations/[id] - Delete reservation
-export async function DELETE(req: NextRequest, { params }: { params: { id: string } }) {
+export async function DELETE(
+  req: NextRequest,
+  { params }: { params: Promise<{ id: string }> }
+) {
   const user = await authenticateRequest(req);
 
   if (!user) {
@@ -107,8 +114,9 @@ export async function DELETE(req: NextRequest, { params }: { params: { id: strin
   }
 
   try {
+    const { id } = await params;
     const reservation = await prisma.reservation.findUnique({
-      where: { id: params.id },
+      where: { id },
       include: { integration: true },
     });
 
