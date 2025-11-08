@@ -700,264 +700,366 @@
   </section>
 
   <!-- ========================================
-       5. HOW IT WORKS - RELAYO AI STYLE (REVEAL EFFECT)
+       CUSTOMER SERVICE END-TO-END SECTION
+       Sticky scroll effect with grid overlay
        ======================================== -->
+  <div class="customer-service-container">
 
-  <!-- reveal: Section 1 - Handle customer service end-to-end -->
-  <section class="reveal-section reveal-section--hero" data-reveal id="hero-service" style="background: #f0eef6;">
-    <div class="reveal-inner">
-      <div class="container">
-        <div class="conduit-hero-box">
-          <div class="conduit-hero-box__content">
-            <h2 class="conduit-hero-box__title">Handle customer service end-to-end</h2>
-            <p class="conduit-hero-box__description">
-              Relayo AI keeps your team focused by intelligently managing communications and escalating only the critical moments.
-            </p>
+    <!-- Hero Section -->
+    <section class="cs-hero-section">
+      <div class="cs-hero-content">
+        <h1 class="cs-hero-title">Handle customer service end-to-end</h1>
+        <p class="cs-hero-description">Relayo keeps your team focused by intelligently handling communications and escalating only the critical moments.</p>
+      </div>
+    </section>
+
+    <!-- Section 1: Conversational Workflows -->
+    <section class="cs-feature-section cs-workflows-section">
+      <div class="cs-section-wrapper">
+        <div class="cs-section-content">
+          <div class="cs-section-left">
+            <span class="cs-section-label">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M8 2L8 14M2 8L14 8" stroke="#FF6B35" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              Conversational Workflows
+            </span>
+            <h2 class="cs-section-title">Build your<br>workflows</h2>
+            <p class="cs-section-description">Design multi-step automated conversations that understand context and adapt dynamically across all your channels.</p>
+          </div>
+
+          <div class="cs-section-right">
+            <!-- Workflow Builder Mock -->
+            <div class="cs-workflow-builder">
+              <div class="cs-workflow-header">
+                <button class="cs-back-btn">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M12.5 15L7.5 10L12.5 5" stroke="#666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+                <span class="cs-workflow-tabs">
+                  <span class="cs-tab active">Editor</span>
+                  <span class="cs-tab">Runs</span>
+                </span>
+                <button class="cs-action-btn">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <rect x="2" y="2" width="12" height="12" rx="2" stroke="#0066FF" stroke-width="1.5" fill="none"/>
+                  </svg>
+                  Customer inquiry flow
+                  <span class="cs-badge">Active</span>
+                </button>
+              </div>
+
+              <div class="cs-workflow-canvas">
+                <!-- Workflow Node 1 -->
+                <div class="cs-workflow-node cs-trigger-node">
+                  <div class="cs-node-badge">Trigger</div>
+                  <div class="cs-node-content">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <rect x="4" y="4" width="16" height="16" rx="2" stroke="#666" stroke-width="2"/>
+                    </svg>
+                    <div class="cs-node-text">
+                      <strong>Website inquiry</strong>
+                      <span>Customer submits contact form</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cs-workflow-connector"></div>
+
+                <!-- Workflow Node 2 -->
+                <div class="cs-workflow-node">
+                  <div class="cs-node-badge">Contact</div>
+                  <div class="cs-node-content">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M16 8L12 12L8 8" stroke="#666" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <div class="cs-node-text">
+                      <strong>Create contact</strong>
+                      <span>Capture details in CRM</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cs-workflow-connector"></div>
+
+                <!-- Workflow Node 3 -->
+                <div class="cs-workflow-node cs-branch-node">
+                  <div class="cs-node-badge">Branch</div>
+                  <div class="cs-node-content">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <rect x="6" y="6" width="12" height="12" rx="2" stroke="#666" stroke-width="2"/>
+                    </svg>
+                    <div class="cs-node-text">
+                      <strong>Qualify lead</strong>
+                      <span>Check customer criteria</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cs-workflow-split">
+                  <div class="split-left">
+                    <div class="cs-split-label true">Yes</div>
+                    <div class="cs-workflow-connector-branch"></div>
+                  </div>
+                  <div class="split-right">
+                    <div class="cs-split-label false">No</div>
+                    <div class="cs-workflow-connector-branch"></div>
+                  </div>
+                </div>
+
+                <!-- Bottom Nodes -->
+                <div class="cs-workflow-bottom">
+                  <div class="cs-workflow-node cs-call-node">
+                    <div class="cs-node-badge">AI</div>
+                    <div class="cs-node-content">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M6 10C6 8.89543 6.89543 8 8 8H9C10.1046 8 11 8.89543 11 10V14C11 15.1046 10.1046 16 9 16H8C6.89543 16 6 15.1046 6 14V10Z" stroke="#0066FF" stroke-width="2"/>
+                        <path d="M18 10C18 8.89543 17.1046 8 16 8H15C13.8954 8 13 8.89543 13 10V14C13 15.1046 13.8954 16 15 16H16C17.1046 16 18 15.1046 18 14V10Z" stroke="#0066FF" stroke-width="2"/>
+                      </svg>
+                      <div class="cs-node-text">
+                        <strong>AI outreach</strong>
+                        <span>Personalized follow-up</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="cs-workflow-node">
+                    <div class="cs-node-badge">Notify</div>
+                    <div class="cs-node-content">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="8" stroke="#999" stroke-width="2"/>
+                      </svg>
+                      <div class="cs-node-text">
+                        <strong>Auto-response</strong>
+                        <span>Send thank you message</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- reveal: Section 2 - Build your workflows -->
-  <section class="reveal-section conduit-style-section" data-reveal id="define-processes" style="background: #f0eef6;">
-    <div class="reveal-inner">
-      <div class="container">
-        <div class="conduit-section__content">
-          <div class="conduit-section__text">
-            <div class="conduit-section__tag">⚡ Smart Workflows</div>
-            <h2 class="conduit-section__title">Build your workflows</h2>
-            <p class="conduit-section__description">
-              Design multi-step automated conversations that work across every channel seamlessly.
-            </p>
+    <!-- Section 2: Reporting & Insights -->
+    <section class="cs-feature-section cs-reporting-section">
+      <div class="cs-section-wrapper">
+        <div class="cs-section-content">
+          <div class="cs-section-left">
+            <span class="cs-section-label">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M2 2L2 14M2 14L14 14" stroke="#FF6B35" stroke-width="2" stroke-linecap="round"/>
+                <path d="M4 10L7 7L10 9L14 5" stroke="#FF6B35" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              Reporting & Insights
+            </span>
+            <h2 class="cs-section-title">Track what<br>matters</h2>
+            <p class="cs-section-description">Real-time analytics to monitor performance, spot trends, and continuously optimize your customer interactions.</p>
           </div>
-        <div class="conduit-section__visual">
-          <div class="workflow-builder">
-            <div class="workflow-builder__header">
-              <div class="workflow-builder__tabs">
-                <span class="workflow-builder__tab">Editor</span>
-                <span class="workflow-builder__tab workflow-builder__tab--active">Runs</span>
-              </div>
-              <div class="workflow-builder__status">
-                <span class="workflow-builder__badge">Active</span>
-                Get lead to schedule a meeting
-              </div>
-            </div>
-            <div class="workflow-builder__canvas">
-              <div class="workflow-node">
-                <div class="workflow-node__icon">⚡</div>
-                <div class="workflow-node__content">
-                  <div class="workflow-node__label">Trigger</div>
-                  <div class="workflow-node__title">Website visited</div>
-                  <div class="workflow-node__subtitle">Prospect visited our blog page</div>
-                </div>
-              </div>
-              <div class="workflow-connector"></div>
-              <div class="workflow-node">
-                <div class="workflow-node__icon">👤</div>
-                <div class="workflow-node__content">
-                  <div class="workflow-node__label">Contact</div>
-                  <div class="workflow-node__title">Enrich Contact</div>
-                  <div class="workflow-node__subtitle">Enrich contact and create a record</div>
-                </div>
-              </div>
-              <div class="workflow-connector"></div>
-              <div class="workflow-node">
-                <div class="workflow-node__icon">🔀</div>
-                <div class="workflow-node__content">
-                  <div class="workflow-node__label">Branch</div>
-                  <div class="workflow-node__title">Branch</div>
-                  <div class="workflow-node__subtitle">Check if company employee count greater than 50</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- reveal: Section 3 - Track what matters -->
-  <section class="reveal-section conduit-style-section" data-reveal id="feel-impact" style="background: #f0eef6;">
-    <div class="reveal-inner">
-      <div class="container">
-      <div class="conduit-section__content conduit-section__content--reverse">
-        <div class="conduit-section__text">
-          <div class="conduit-section__tag">📈 Analytics & Performance</div>
-          <h2 class="conduit-section__title">Track what matters</h2>
-          <p class="conduit-section__description">
-            Real-time insights to monitor performance, spot trends, and continuously improve your customer interactions.
-          </p>
-        </div>
-        <div class="conduit-section__visual">
-          <div class="analytics-dashboard">
-            <div class="analytics-dashboard__controls">
-              <select class="analytics-dashboard__select">
-                <option>Last 7 days</option>
-              </select>
-              <span class="analytics-dashboard__text">compared to</span>
-              <select class="analytics-dashboard__select">
-                <option>Previous period: Aug 22, 2025 - Aug 29, 2025</option>
-              </select>
-            </div>
-            <div class="analytics-dashboard__metrics">
-              <div class="analytics-metric">
-                <div class="analytics-metric__header">
-                  <span class="analytics-metric__title">AI automation rate</span>
-                  <span class="analytics-metric__change">-8.1%</span>
-                </div>
-                <div class="analytics-metric__value">70.6%</div>
-                <div class="analytics-metric__comparison">78.7% previous period</div>
-                <div class="analytics-metric__chart">
-                  <svg viewBox="0 0 200 80" preserveAspectRatio="none">
-                    <path d="M 0 20 Q 50 10, 100 30 T 200 25" fill="rgba(59, 130, 246, 0.2)" stroke="rgba(59, 130, 246, 0.8)" stroke-width="2"/>
+          <div class="cs-section-right">
+            <!-- Analytics Dashboard Mock -->
+            <div class="cs-analytics-dashboard">
+              <div class="cs-dashboard-header">
+                <div class="cs-date-selector">
+                  <span>Last 7 days</span>
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                    <path d="M3 5L6 8L9 5" stroke="#666" stroke-width="1.5"/>
                   </svg>
                 </div>
-              </div>
-              <div class="analytics-metric">
-                <div class="analytics-metric__header">
-                  <span class="analytics-metric__title">Open ticket count</span>
-                </div>
-                <div class="analytics-metric__value">133</div>
-                <div class="analytics-metric__comparison">90 previous period</div>
-              </div>
-            </div>
-            <div class="analytics-dashboard__escalations">
-              <h4 class="analytics-dashboard__subtitle">Escalations</h4>
-              <div class="escalation-bar">
-                <div class="escalation-bar__segment" style="width: 52.8%; background: #FCD34D;"></div>
-                <div class="escalation-bar__segment" style="width: 27.8%; background: #FBBF24;"></div>
-                <div class="escalation-bar__segment" style="width: 19.4%; background: #F87171;"></div>
-              </div>
-              <div class="escalation-list">
-                <div class="escalation-item">
-                  <span class="escalation-item__dot" style="background: #FCD34D;"></span>
-                  <span class="escalation-item__label">AI missing info</span>
-                  <span class="escalation-item__value">19 (52.8%)</span>
-                </div>
-                <div class="escalation-item">
-                  <span class="escalation-item__dot" style="background: #FBBF24;"></span>
-                  <span class="escalation-item__label">AI needs your help</span>
-                  <span class="escalation-item__value">10 (27.8%)</span>
-                </div>
-                <div class="escalation-item">
-                  <span class="escalation-item__dot" style="background: #F87171;"></span>
-                  <span class="escalation-item__label">Urgent tagged</span>
-                  <span class="escalation-item__value">7 (19.4%)</span>
+                <span class="cs-comparison-text">compared to</span>
+                <div class="cs-date-range">
+                  <span>Previous period</span>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- reveal: Section 4 - One inbox, total control -->
-  <section class="reveal-section conduit-style-section" data-reveal id="unified-inbox" style="background: #f0eef6;">
-    <div class="reveal-inner">
-      <div class="container">
-      <div class="conduit-section__content">
-        <div class="conduit-section__text">
-          <div class="conduit-section__tag">💬 Unified Communication Hub</div>
-          <h2 class="conduit-section__title">One inbox, total control</h2>
-          <p class="conduit-section__description">
-            Where AI automation pauses, your team takes over — manage every conversation in one centralized platform. Train your AI from the inbox and scale effortlessly.
-          </p>
-        </div>
-        <div class="conduit-section__visual">
-          <div class="unified-inbox">
-            <div class="unified-inbox__header">
-              <div class="unified-inbox__user">
-                <div class="unified-inbox__avatar">👤</div>
-                <div class="unified-inbox__user-info">
-                  <div class="unified-inbox__user-name">Will Garman</div>
-                  <div class="unified-inbox__notes">
-                    <span>📝 3 Notes</span>
-                    <span>+ Add note</span>
-                    <span>+ Add knowledge</span>
+              <div class="cs-metrics-grid">
+                <!-- AI Automation Rate -->
+                <div class="cs-metric-card">
+                  <div class="cs-metric-header">
+                    <span class="cs-metric-label">AI automation rate</span>
+                    <span class="cs-metric-change negative">+5.2%</span>
+                  </div>
+                  <div class="cs-metric-value">85.4%</div>
+                  <div class="cs-metric-comparison">80.2% previous period</div>
+
+                  <!-- Chart -->
+                  <svg class="cs-metric-chart" viewBox="0 0 400 120" preserveAspectRatio="none">
+                    <defs>
+                      <linearGradient id="chartGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#6B9EFF;stop-opacity:0.3" />
+                        <stop offset="100%" style="stop-color:#6B9EFF;stop-opacity:0.05" />
+                      </linearGradient>
+                    </defs>
+                    <path d="M0,60 L50,45 L100,55 L150,35 L200,50 L250,30 L300,45 L350,55 L400,50"
+                          stroke="#6B9EFF"
+                          stroke-width="2"
+                          fill="none"/>
+                    <path d="M0,60 L50,45 L100,55 L150,35 L200,50 L250,30 L300,45 L350,55 L400,50 L400,120 L0,120 Z"
+                          fill="url(#chartGradient)"/>
+                  </svg>
+                </div>
+
+                <!-- Response Time -->
+                <div class="cs-metric-card">
+                  <div class="cs-metric-header">
+                    <span class="cs-metric-label">Avg response</span>
+                  </div>
+                  <div class="cs-metric-value">1.2s</div>
+                  <div class="cs-metric-comparison">Target: <1s</div>
+
+                  <div class="cs-simple-bar-chart">
+                    <div class="cs-bar-container">
+                      <div class="cs-bar" style="height: 65%; background: #E8F1FF;"></div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="unified-inbox__actions">
-                <button class="unified-inbox__action">🔄</button>
-                <button class="unified-inbox__action">📞</button>
-                <button class="unified-inbox__action">📋</button>
-              </div>
-            </div>
-            <div class="unified-inbox__timeline">
-              <div class="unified-inbox__date">YESTERDAY</div>
-              <div class="unified-inbox__message">
-                <div class="unified-inbox__message-avatar">👤</div>
-                <div class="unified-inbox__message-content">
-                  <div class="unified-inbox__message-header">
-                    <span class="unified-inbox__message-name">Will Garman</span>
-                    <span class="unified-inbox__message-time">2:18 PM • 2:18 PM</span>
+
+              <!-- Escalations Section -->
+              <div class="cs-escalations-section">
+                <div class="cs-escalations-header">
+                  <span class="cs-escalations-title">Escalations</span>
+                  <span class="cs-escalations-link">View all</span>
+                </div>
+
+                <div class="cs-escalation-bars">
+                  <div class="cs-escalation-bar">
+                    <div class="cs-bar-fill yellow" style="width: 45%;"></div>
+                    <span class="cs-bar-label">AI needs context</span>
+                    <span class="cs-bar-count">24</span>
                   </div>
-                  <div class="unified-inbox__message-label">Customer Support</div>
-                  <div class="unified-inbox__message-text">Hi there, I'm Alex from Relayo Support. How can we help?</div>
-                </div>
-              </div>
-              <div class="unified-inbox__date">TODAY</div>
-              <div class="unified-inbox__message">
-                <div class="unified-inbox__message-avatar">👤</div>
-                <div class="unified-inbox__message-content">
-                  <div class="unified-inbox__message-header">
-                    <span class="unified-inbox__message-name">Will Garman</span>
-                    <span class="unified-inbox__message-time">2:18 PM • 2:18 PM</span>
+
+                  <div class="cs-escalation-bar">
+                    <div class="cs-bar-fill orange" style="width: 32%;"></div>
+                    <span class="cs-bar-label">Complex request</span>
+                    <span class="cs-bar-count">16</span>
                   </div>
-                  <div class="unified-inbox__message-label">🎫 Trip Modification</div>
-                  <div class="unified-inbox__message-text">I was wondering if I can extend my upcoming stay to checkout one day later??</div>
-                </div>
-              </div>
-              <div class="unified-inbox__status">
-                <div class="unified-inbox__status-badge">✅ Availability lookup successful</div>
-                <div class="unified-inbox__status-details">
-                  Property: 230CALST<br>
-                  Date: 04/10/2025<br>
-                  Status: Available
-                </div>
-              </div>
-            </div>
-            <div class="unified-inbox__sidebar">
-              <div class="unified-inbox__sidebar-section">
-                <h4>At a glance</h4>
-                <div class="unified-inbox__stat">
-                  <span class="unified-inbox__stat-label">During Stay</span>
-                  <div class="unified-inbox__stat-timeline">
-                    <span>BEFORE</span>
-                    <span>DURING</span>
+
+                  <div class="cs-escalation-bar">
+                    <div class="cs-bar-fill red" style="width: 23%;"></div>
+                    <span class="cs-bar-label">Urgent</span>
+                    <span class="cs-bar-count">12</span>
                   </div>
-                </div>
-                <div class="unified-inbox__status-message">
-                  ✨ Will is doing pretty well.
-                  <p class="unified-inbox__status-detail">The guest is coming for an upcoming stay and wants to extend their stay.</p>
-                </div>
-              </div>
-              <div class="unified-inbox__sidebar-section">
-                <h4>Conversation tags</h4>
-                <div class="unified-inbox__tags">
-                  <span class="unified-inbox__tag">🔴 Access Issue</span>
-                  <span class="unified-inbox__tag">🔵 Extend Request</span>
-                </div>
-              </div>
-              <div class="unified-inbox__sidebar-section">
-                <h4>Conversation</h4>
-                <div class="unified-inbox__booking">
-                  <div class="unified-inbox__booking-image"></div>
-                  <div class="unified-inbox__booking-name">Winterfell Castle</div>
-                  <div class="unified-inbox__booking-date">04/09/2025</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
+
+    <!-- Section 3: Unified Inbox -->
+    <section class="cs-feature-section cs-inbox-section">
+      <div class="cs-section-wrapper">
+        <div class="cs-section-content">
+          <div class="cs-section-left">
+            <span class="cs-section-label">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <rect x="2" y="3" width="12" height="10" rx="1" stroke="#FF6B35" stroke-width="2" fill="none"/>
+                <path d="M2 5L8 9L14 5" stroke="#FF6B35" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              AI-Native Unified Inbox
+            </span>
+            <h2 class="cs-section-title">One inbox,<br>total control</h2>
+            <p class="cs-section-description">When automation pauses, your team takes over. Manage every conversation in one place and train AI from the inbox.</p>
+          </div>
+
+          <div class="cs-section-right">
+            <!-- Inbox Interface Mock -->
+            <div class="cs-inbox-interface">
+              <div class="cs-inbox-header">
+                <div class="cs-contact-info">
+                  <img src="https://ui-avatars.com/api/?name=Sarah+Chen&background=4A5568&color=fff&size=40" alt="Customer" class="cs-contact-avatar">
+                  <span class="cs-contact-name">Sarah Chen</span>
+                </div>
+                <div class="cs-header-actions">
+                  <span class="cs-glance-text">At a glance</span>
+                </div>
+              </div>
+
+              <div class="cs-conversation-timeline">
+                <div class="cs-timeline-date">YESTERDAY</div>
+
+                <div class="cs-message-group">
+                  <img src="https://ui-avatars.com/api/?name=Sarah+Chen&background=4A5568&color=fff&size=32" alt="Customer" class="cs-message-avatar">
+                  <div class="cs-message-content">
+                    <div class="cs-message-header">
+                      <span class="cs-message-sender">Sarah Chen</span>
+                      <span class="cs-message-time">4:32 PM</span>
+                    </div>
+
+                    <div class="cs-ai-response-card">
+                      <div class="cs-ai-response-header">
+                        <div class="cs-ai-badge">Relayo Agent</div>
+                        <span class="cs-ai-sent">AI</span>
+                      </div>
+                      <p class="cs-ai-message">Hi Sarah! I'm here from Relayo support. How can I help?</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cs-timeline-date">TODAY</div>
+
+                <div class="cs-message-group">
+                  <img src="https://ui-avatars.com/api/?name=Sarah+Chen&background=4A5568&color=fff&size=32" alt="Customer" class="cs-message-avatar">
+                  <div class="cs-message-content">
+                    <div class="cs-message-header">
+                      <span class="cs-message-sender">Sarah Chen</span>
+                      <span class="cs-message-time">10:15 AM</span>
+                    </div>
+                    <p class="cs-message-text">Can you help me with Enterprise pricing?</p>
+
+                    <div class="cs-ai-response-card">
+                      <div class="cs-ai-response-header">
+                        <div class="cs-ai-badge">Relayo Agent</div>
+                        <span class="cs-ai-sent">AI</span>
+                      </div>
+                      <p class="cs-ai-message">Absolutely! Our Enterprise plan includes unlimited agents and custom integrations. Let me get you pricing details.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cs-inbox-sidebar">
+                <div class="cs-sidebar-section">
+                  <h3 class="cs-sidebar-title">Journey</h3>
+                  <div class="cs-timeline-bars">
+                    <div class="cs-timeline-bar"></div>
+                    <div class="cs-timeline-bar active"></div>
+                    <div class="cs-timeline-bar"></div>
+                  </div>
+                </div>
+
+                <div class="cs-sidebar-section">
+                  <div class="cs-status-badge positive">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <circle cx="7" cy="7" r="6" fill="#10B981"/>
+                      <path d="M4 7L6 9L10 5" stroke="white" stroke-width="2"/>
+                    </svg>
+                    High engagement
+                  </div>
+                  <p class="cs-status-description">Customer exploring Enterprise features</p>
+                </div>
+
+                <div class="cs-sidebar-section">
+                  <h4 class="cs-subsection-title">Tags</h4>
+                  <div class="cs-tag-list">
+                    <span class="cs-tag">Enterprise</span>
+                    <span class="cs-tag">Hot lead</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+  </div>
 
   <!-- ========================================
        6. PRODUCTION-READY AGENTS - RELAYO AI STYLE
@@ -1309,5 +1411,6 @@
 
   <!-- Script -->
   <script src="./script.js"></script>
+  <script src="./js/customer-service.js"></script>
 </body>
 </html>
