@@ -833,20 +833,76 @@ body.is-stuck .header--floating {
     inset 0 1px 0 rgba(255, 255, 255, 0.16),
     inset 0 -1px 0 rgba(59, 130, 246, 0.08);
   position: relative;
-  overflow: hidden;
+  overflow: visible;
+  isolation: isolate;
 }
 
-/* Soft glow effect around the card - reduced by 20% */
+/* Rotating border glow effect - 50% opacity */
+.walkthrough__grid::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 32px;
+  padding: 4px;
+  background: conic-gradient(
+    from var(--angle),
+    rgba(255, 255, 255, 1) 0%,
+    rgba(147, 197, 253, 0.95) 10%,
+    rgba(96, 165, 250, 0.9) 15%,
+    rgba(147, 197, 253, 0.7) 25%,
+    transparent 40%,
+    transparent 55%,
+    rgba(147, 197, 253, 0.7) 70%,
+    rgba(96, 165, 250, 0.9) 80%,
+    rgba(147, 197, 253, 0.95) 85%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+  filter: blur(4px) brightness(1.2);
+  animation: spin-border-glow 6s linear infinite;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+/* Fallback for browsers without @property support */
+@supports not (background: conic-gradient(from var(--angle), red, blue)) {
+  .walkthrough__grid::before {
+    background: conic-gradient(
+      from 0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(147, 197, 253, 0.95) 10%,
+      rgba(96, 165, 250, 0.9) 15%,
+      rgba(147, 197, 253, 0.7) 25%,
+      transparent 40%,
+      transparent 55%,
+      rgba(147, 197, 253, 0.7) 70%,
+      rgba(96, 165, 250, 0.9) 80%,
+      rgba(147, 197, 253, 0.95) 85%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    animation: spin-border-glow-fallback 6s linear infinite;
+  }
+}
+
+/* Soft glow effect around the card - INCREASED intensity */
 .walkthrough__grid::after {
   content: '';
   position: absolute;
-  inset: -60px;
+  inset: -80px;
   background:
-    radial-gradient(ellipse at center, rgba(59, 130, 246, 0.48), rgba(96, 165, 250, 0.32) 50%, transparent 75%),
-    radial-gradient(ellipse at 30% 30%, rgba(139, 192, 253, 0.4), transparent 60%),
-    radial-gradient(ellipse at 70% 70%, rgba(59, 130, 246, 0.4), transparent 60%);
+    radial-gradient(ellipse at center, rgba(59, 130, 246, 0.7), rgba(96, 165, 250, 0.5) 50%, transparent 75%),
+    radial-gradient(ellipse at 30% 30%, rgba(139, 192, 253, 0.6), transparent 60%),
+    radial-gradient(ellipse at 70% 70%, rgba(59, 130, 246, 0.6), transparent 60%);
   z-index: -1;
-  filter: blur(60px);
+  filter: blur(80px);
   pointer-events: none;
 }
 
@@ -1695,25 +1751,76 @@ body.is-stuck .header--floating {
   animation: floatCard 6s ease-in-out infinite, pulseGlow 3s ease-in-out infinite;
   transform: translateZ(0);
   backface-visibility: hidden;
+  isolation: isolate;
 }
 
-/* Animated border glow */
+/* Rotating border glow effect - 50% opacity */
 .hero__demo-card::before {
   content: '';
   position: absolute;
-  inset: -3px;
+  inset: -4px;
   border-radius: var(--border-radius-xl);
-  background: linear-gradient(45deg,
-    rgba(96, 165, 250, 0.8),
-    rgba(37, 99, 235, 0.8),
-    rgba(147, 197, 253, 0.8),
-    rgba(96, 165, 250, 0.8)
+  padding: 4px;
+  background: conic-gradient(
+    from var(--angle),
+    rgba(255, 255, 255, 1) 0%,
+    rgba(147, 197, 253, 0.95) 10%,
+    rgba(96, 165, 250, 0.9) 15%,
+    rgba(147, 197, 253, 0.7) 25%,
+    transparent 40%,
+    transparent 55%,
+    rgba(147, 197, 253, 0.7) 70%,
+    rgba(96, 165, 250, 0.9) 80%,
+    rgba(147, 197, 253, 0.95) 85%,
+    rgba(255, 255, 255, 1) 100%
   );
-  background-size: 300% 300%;
-  animation: gradientBorder 4s ease infinite;
-  filter: blur(8px);
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+  filter: blur(4px) brightness(1.2);
+  animation: spin-border-glow 6s linear infinite;
   z-index: -1;
-  opacity: 0.6;
+  opacity: 0.5;
+}
+
+/* Fallback for browsers without @property support */
+@supports not (background: conic-gradient(from var(--angle), red, blue)) {
+  .hero__demo-card::before {
+    background: conic-gradient(
+      from 0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(147, 197, 253, 0.95) 10%,
+      rgba(96, 165, 250, 0.9) 15%,
+      rgba(147, 197, 253, 0.7) 25%,
+      transparent 40%,
+      transparent 55%,
+      rgba(147, 197, 253, 0.7) 70%,
+      rgba(96, 165, 250, 0.9) 80%,
+      rgba(147, 197, 253, 0.95) 85%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    animation: spin-border-glow-fallback 6s linear infinite;
+  }
+}
+
+/* Outer soft glow effect */
+.hero__demo-card::after {
+  content: '';
+  position: absolute;
+  inset: -80px;
+  background:
+    radial-gradient(ellipse at center, rgba(59, 130, 246, 0.7), rgba(96, 165, 250, 0.5) 50%, transparent 75%),
+    radial-gradient(ellipse at 30% 30%, rgba(139, 192, 253, 0.6), transparent 60%),
+    radial-gradient(ellipse at 70% 70%, rgba(59, 130, 246, 0.6), transparent 60%);
+  z-index: -1;
+  filter: blur(80px);
+  pointer-events: none;
 }
 
 @keyframes floatCard {
