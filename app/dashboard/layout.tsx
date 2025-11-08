@@ -23,17 +23,17 @@ export default function DashboardLayout({
 
   if (!isAuthenticated) {
     return (
-      <div className="h-screen flex items-center justify-center bg-gray-50">
+      <div className="h-screen flex items-center justify-center bg-white dark:bg-black">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#3B5BFF] mx-auto mb-4"></div>
-          <p className="text-gray-600">Loading...</p>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto mb-4"></div>
+          <p className="text-gray-600 dark:text-gray-400">Loading...</p>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="h-screen overflow-hidden bg-gray-50">
+    <div className="h-screen overflow-hidden bg-white dark:bg-black transition-colors duration-200">
       {/* Sidebar */}
       <Sidebar />
 
@@ -43,7 +43,7 @@ export default function DashboardLayout({
         <TopBar />
 
         {/* Page Content */}
-        <main className="flex-1 overflow-auto p-6">
+        <main className="flex-1 overflow-auto p-8 bg-gray-50/80 dark:bg-black">
           {children}
         </main>
       </div>

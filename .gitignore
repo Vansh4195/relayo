@@ -60,3 +60,4 @@ wrangler.toml
 !public/**/*.jpg
 !assets/**/*.png
 !assets/**/*.jpg
+env-for-vercel.txt

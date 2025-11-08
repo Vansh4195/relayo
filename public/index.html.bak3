@@ -25,7 +25,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=EB+Garamond:ital,wght@1,500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Styles -->
   <link rel="stylesheet" href="./styles.css">
@@ -126,6 +125,17 @@
         An AI Employee that puts in the work 24/7, capturing leads instantly and converting conversations into revenue—on autopilot.
       </p>
 
+      <div class="hero__ctas">
+        <a href="#demo" class="btn btn--animated-pill">
+          <span class="btn__text">Watch a demo</span>
+          <span class="btn__circle">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+      </div>
+
       <!-- Demo Card with Chat Preview -->
       <div class="hero__demo-card">
         <div class="hero__demo-content">
@@ -172,310 +182,6 @@
     </div>
 
     <div class="logos-carousel__track-container">
-      <div class="logos-carousel__track">
-        <!-- First set -->
-        <div class="logos-carousel__slide" data-switched-from="Yelp Reservations">
-          <img src="https://cdn.brandfetch.io/yelp.com?c=1idcga52lJROPfDrC4O" alt="Yelp" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Airbnb Experiences">
-          <img src="https://cdn.brandfetch.io/airbnb.com?c=1idcga52lJROPfDrC4O" alt="Airbnb" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Marriott Hotels">
-          <img src="https://cdn.brandfetch.io/marriott.com?c=1idcga52lJROPfDrC4O" alt="Marriott" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Hilton Hotels">
-          <img src="https://cdn.brandfetch.io/hilton.com?c=1idcga52lJROPfDrC4O" alt="Hilton" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Booking.com">
-          <img src="https://cdn.brandfetch.io/booking.com?c=1idcga52lJROPfDrC4O" alt="Booking.com" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Expedia">
-          <img src="https://cdn.brandfetch.io/expedia.com?c=1idcga52lJROPfDrC4O" alt="Expedia" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="TripAdvisor">
-          <img src="https://cdn.brandfetch.io/tripadvisor.com?c=1idcga52lJROPfDrC4O" alt="TripAdvisor" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Starbucks">
-          <img src="https://cdn.brandfetch.io/starbucks.com?c=1idcga52lJROPfDrC4O" alt="Starbucks" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Chipotle">
-          <img src="https://cdn.brandfetch.io/chipotle.com?c=1idcga52lJROPfDrC4O" alt="Chipotle" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Panera Bread">
-          <img src="https://cdn.brandfetch.io/panerabread.com?c=1idcga52lJROPfDrC4O" alt="Panera" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Walgreens">
-          <img src="https://cdn.brandfetch.io/walgreens.com?c=1idcga52lJROPfDrC4O" alt="Walgreens" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="CVS Pharmacy">
-          <img src="https://cdn.brandfetch.io/cvs.com?c=1idcga52lJROPfDrC4O" alt="CVS" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Target">
-          <img src="https://cdn.brandfetch.io/target.com?c=1idcga52lJROPfDrC4O" alt="Target" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Walmart">
-          <img src="https://cdn.brandfetch.io/walmart.com?c=1idcga52lJROPfDrC4O" alt="Walmart" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Best Buy">
-          <img src="https://cdn.brandfetch.io/bestbuy.com?c=1idcga52lJROPfDrC4O" alt="Best Buy" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Home Depot">
-          <img src="https://cdn.brandfetch.io/homedepot.com?c=1idcga52lJROPfDrC4O" alt="Home Depot" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="FedEx">
-          <img src="https://cdn.brandfetch.io/fedex.com?c=1idcga52lJROPfDrC4O" alt="FedEx" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="UPS">
-          <img src="https://cdn.brandfetch.io/ups.com?c=1idcga52lJROPfDrC4O" alt="UPS" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Costco">
-          <img src="https://cdn.brandfetch.io/costco.com?c=1idcga52lJROPfDrC4O" alt="Costco" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Whole Foods">
-          <img src="https://cdn.brandfetch.io/wholefoodsmarket.com?c=1idcga52lJROPfDrC4O" alt="Whole Foods" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Nordstrom">
-          <img src="https://cdn.brandfetch.io/nordstrom.com?c=1idcga52lJROPfDrC4O" alt="Nordstrom" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Sephora">
-          <img src="https://cdn.brandfetch.io/sephora.com?c=1idcga52lJROPfDrC4O" alt="Sephora" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Ulta Beauty">
-          <img src="https://cdn.brandfetch.io/ulta.com?c=1idcga52lJROPfDrC4O" alt="Ulta" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Equinox">
-          <img src="https://cdn.brandfetch.io/equinox.com?c=1idcga52lJROPfDrC4O" alt="Equinox" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Planet Fitness">
-          <img src="https://cdn.brandfetch.io/planetfitness.com?c=1idcga52lJROPfDrC4O" alt="Planet Fitness" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="LA Fitness">
-          <img src="https://cdn.brandfetch.io/lafitness.com?c=1idcga52lJROPfDrC4O" alt="LA Fitness" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Massage Envy">
-          <img src="https://cdn.brandfetch.io/massageenvy.com?c=1idcga52lJROPfDrC4O" alt="Massage Envy" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="DryBar">
-          <img src="https://cdn.brandfetch.io/thedrybar.com?c=1idcga52lJROPfDrC4O" alt="DryBar" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Great Clips">
-          <img src="https://cdn.brandfetch.io/greatclips.com?c=1idcga52lJROPfDrC4O" alt="Great Clips" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Sport Clips">
-          <img src="https://cdn.brandfetch.io/sportclips.com?c=1idcga52lJROPfDrC4O" alt="Sport Clips" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Orangetheory">
-          <img src="https://cdn.brandfetch.io/orangetheory.com?c=1idcga52lJROPfDrC4O" alt="Orangetheory" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Pure Barre">
-          <img src="https://cdn.brandfetch.io/purebarre.com?c=1idcga52lJROPfDrC4O" alt="Pure Barre" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="SoulCycle">
-          <img src="https://cdn.brandfetch.io/soul-cycle.com?c=1idcga52lJROPfDrC4O" alt="SoulCycle" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Anytime Fitness">
-          <img src="https://cdn.brandfetch.io/anytimefitness.com?c=1idcga52lJROPfDrC4O" alt="Anytime Fitness" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Crunch Fitness">
-          <img src="https://cdn.brandfetch.io/crunch.com?c=1idcga52lJROPfDrC4O" alt="Crunch" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Petco">
-          <img src="https://cdn.brandfetch.io/petco.com?c=1idcga52lJROPfDrC4O" alt="Petco" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="PetSmart">
-          <img src="https://cdn.brandfetch.io/petsmart.com?c=1idcga52lJROPfDrC4O" alt="PetSmart" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="AutoZone">
-          <img src="https://cdn.brandfetch.io/autozone.com?c=1idcga52lJROPfDrC4O" alt="AutoZone" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Jiffy Lube">
-          <img src="https://cdn.brandfetch.io/jiffylube.com?c=1idcga52lJROPfDrC4O" alt="Jiffy Lube" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Valvoline">
-          <img src="https://cdn.brandfetch.io/valvoline.com?c=1idcga52lJROPfDrC4O" alt="Valvoline" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Hyatt Hotels">
-          <img src="https://cdn.brandfetch.io/hyatt.com?c=1idcga52lJROPfDrC4O" alt="Hyatt" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Wyndham Hotels">
-          <img src="https://cdn.brandfetch.io/wyndhamhotels.com?c=1idcga52lJROPfDrC4O" alt="Wyndham" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Subway">
-          <img src="https://cdn.brandfetch.io/subway.com?c=1idcga52lJROPfDrC4O" alt="Subway" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Domino's Pizza">
-          <img src="https://cdn.brandfetch.io/dominos.com?c=1idcga52lJROPfDrC4O" alt="Dominos" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Papa John's">
-          <img src="https://cdn.brandfetch.io/papajohns.com?c=1idcga52lJROPfDrC4O" alt="Papa Johns" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Lowe's">
-          <img src="https://cdn.brandfetch.io/lowes.com?c=1idcga52lJROPfDrC4O" alt="Lowes" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Aspen Dental">
-          <img src="https://cdn.brandfetch.io/aspendental.com?c=1idcga52lJROPfDrC4O" alt="Aspen Dental" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Supercuts">
-          <img src="https://cdn.brandfetch.io/supercuts.com?c=1idcga52lJROPfDrC4O" alt="Supercuts" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Midas">
-          <img src="https://cdn.brandfetch.io/midas.com?c=1idcga52lJROPfDrC4O" alt="Midas" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Pep Boys">
-          <img src="https://cdn.brandfetch.io/pepboys.com?c=1idcga52lJROPfDrC4O" alt="Pep Boys" loading="lazy">
-        </div>
-        <!-- Duplicate set for seamless loop -->
-        <div class="logos-carousel__slide" data-switched-from="Yelp Reservations">
-          <img src="https://cdn.brandfetch.io/yelp.com?c=1idcga52lJROPfDrC4O" alt="Yelp" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Airbnb Experiences">
-          <img src="https://cdn.brandfetch.io/airbnb.com?c=1idcga52lJROPfDrC4O" alt="Airbnb" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Marriott Hotels">
-          <img src="https://cdn.brandfetch.io/marriott.com?c=1idcga52lJROPfDrC4O" alt="Marriott" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Hilton Hotels">
-          <img src="https://cdn.brandfetch.io/hilton.com?c=1idcga52lJROPfDrC4O" alt="Hilton" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Booking.com">
-          <img src="https://cdn.brandfetch.io/booking.com?c=1idcga52lJROPfDrC4O" alt="Booking.com" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Expedia">
-          <img src="https://cdn.brandfetch.io/expedia.com?c=1idcga52lJROPfDrC4O" alt="Expedia" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="TripAdvisor">
-          <img src="https://cdn.brandfetch.io/tripadvisor.com?c=1idcga52lJROPfDrC4O" alt="TripAdvisor" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Starbucks">
-          <img src="https://cdn.brandfetch.io/starbucks.com?c=1idcga52lJROPfDrC4O" alt="Starbucks" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Chipotle">
-          <img src="https://cdn.brandfetch.io/chipotle.com?c=1idcga52lJROPfDrC4O" alt="Chipotle" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Panera Bread">
-          <img src="https://cdn.brandfetch.io/panerabread.com?c=1idcga52lJROPfDrC4O" alt="Panera" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Walgreens">
-          <img src="https://cdn.brandfetch.io/walgreens.com?c=1idcga52lJROPfDrC4O" alt="Walgreens" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="CVS Pharmacy">
-          <img src="https://cdn.brandfetch.io/cvs.com?c=1idcga52lJROPfDrC4O" alt="CVS" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Target">
-          <img src="https://cdn.brandfetch.io/target.com?c=1idcga52lJROPfDrC4O" alt="Target" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Walmart">
-          <img src="https://cdn.brandfetch.io/walmart.com?c=1idcga52lJROPfDrC4O" alt="Walmart" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Best Buy">
-          <img src="https://cdn.brandfetch.io/bestbuy.com?c=1idcga52lJROPfDrC4O" alt="Best Buy" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Home Depot">
-          <img src="https://cdn.brandfetch.io/homedepot.com?c=1idcga52lJROPfDrC4O" alt="Home Depot" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="FedEx">
-          <img src="https://cdn.brandfetch.io/fedex.com?c=1idcga52lJROPfDrC4O" alt="FedEx" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="UPS">
-          <img src="https://cdn.brandfetch.io/ups.com?c=1idcga52lJROPfDrC4O" alt="UPS" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Costco">
-          <img src="https://cdn.brandfetch.io/costco.com?c=1idcga52lJROPfDrC4O" alt="Costco" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Whole Foods">
-          <img src="https://cdn.brandfetch.io/wholefoodsmarket.com?c=1idcga52lJROPfDrC4O" alt="Whole Foods" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Nordstrom">
-          <img src="https://cdn.brandfetch.io/nordstrom.com?c=1idcga52lJROPfDrC4O" alt="Nordstrom" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Sephora">
-          <img src="https://cdn.brandfetch.io/sephora.com?c=1idcga52lJROPfDrC4O" alt="Sephora" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Ulta Beauty">
-          <img src="https://cdn.brandfetch.io/ulta.com?c=1idcga52lJROPfDrC4O" alt="Ulta" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Equinox">
-          <img src="https://cdn.brandfetch.io/equinox.com?c=1idcga52lJROPfDrC4O" alt="Equinox" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Planet Fitness">
-          <img src="https://cdn.brandfetch.io/planetfitness.com?c=1idcga52lJROPfDrC4O" alt="Planet Fitness" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="LA Fitness">
-          <img src="https://cdn.brandfetch.io/lafitness.com?c=1idcga52lJROPfDrC4O" alt="LA Fitness" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Massage Envy">
-          <img src="https://cdn.brandfetch.io/massageenvy.com?c=1idcga52lJROPfDrC4O" alt="Massage Envy" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="DryBar">
-          <img src="https://cdn.brandfetch.io/thedrybar.com?c=1idcga52lJROPfDrC4O" alt="DryBar" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Great Clips">
-          <img src="https://cdn.brandfetch.io/greatclips.com?c=1idcga52lJROPfDrC4O" alt="Great Clips" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Sport Clips">
-          <img src="https://cdn.brandfetch.io/sportclips.com?c=1idcga52lJROPfDrC4O" alt="Sport Clips" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Orangetheory">
-          <img src="https://cdn.brandfetch.io/orangetheory.com?c=1idcga52lJROPfDrC4O" alt="Orangetheory" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Pure Barre">
-          <img src="https://cdn.brandfetch.io/purebarre.com?c=1idcga52lJROPfDrC4O" alt="Pure Barre" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="SoulCycle">
-          <img src="https://cdn.brandfetch.io/soul-cycle.com?c=1idcga52lJROPfDrC4O" alt="SoulCycle" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Anytime Fitness">
-          <img src="https://cdn.brandfetch.io/anytimefitness.com?c=1idcga52lJROPfDrC4O" alt="Anytime Fitness" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Crunch Fitness">
-          <img src="https://cdn.brandfetch.io/crunch.com?c=1idcga52lJROPfDrC4O" alt="Crunch" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Petco">
-          <img src="https://cdn.brandfetch.io/petco.com?c=1idcga52lJROPfDrC4O" alt="Petco" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="PetSmart">
-          <img src="https://cdn.brandfetch.io/petsmart.com?c=1idcga52lJROPfDrC4O" alt="PetSmart" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="AutoZone">
-          <img src="https://cdn.brandfetch.io/autozone.com?c=1idcga52lJROPfDrC4O" alt="AutoZone" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Jiffy Lube">
-          <img src="https://cdn.brandfetch.io/jiffylube.com?c=1idcga52lJROPfDrC4O" alt="Jiffy Lube" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Valvoline">
-          <img src="https://cdn.brandfetch.io/valvoline.com?c=1idcga52lJROPfDrC4O" alt="Valvoline" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Hyatt Hotels">
-          <img src="https://cdn.brandfetch.io/hyatt.com?c=1idcga52lJROPfDrC4O" alt="Hyatt" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Wyndham Hotels">
-          <img src="https://cdn.brandfetch.io/wyndhamhotels.com?c=1idcga52lJROPfDrC4O" alt="Wyndham" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Subway">
-          <img src="https://cdn.brandfetch.io/subway.com?c=1idcga52lJROPfDrC4O" alt="Subway" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Domino's Pizza">
-          <img src="https://cdn.brandfetch.io/dominos.com?c=1idcga52lJROPfDrC4O" alt="Dominos" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Papa John's">
-          <img src="https://cdn.brandfetch.io/papajohns.com?c=1idcga52lJROPfDrC4O" alt="Papa Johns" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Lowe's">
-          <img src="https://cdn.brandfetch.io/lowes.com?c=1idcga52lJROPfDrC4O" alt="Lowes" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Aspen Dental">
-          <img src="https://cdn.brandfetch.io/aspendental.com?c=1idcga52lJROPfDrC4O" alt="Aspen Dental" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Supercuts">
-          <img src="https://cdn.brandfetch.io/supercuts.com?c=1idcga52lJROPfDrC4O" alt="Supercuts" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Midas">
-          <img src="https://cdn.brandfetch.io/midas.com?c=1idcga52lJROPfDrC4O" alt="Midas" loading="lazy">
-        </div>
-        <div class="logos-carousel__slide" data-switched-from="Pep Boys">
-          <img src="https://cdn.brandfetch.io/pepboys.com?c=1idcga52lJROPfDrC4O" alt="Pep Boys" loading="lazy">
-        </div>
-      </div>
       </div>
     </div>
   </section>
@@ -483,10 +189,10 @@
   <!-- ========================================
        4. RELAYO WALKTHROUGH (Podium-style)
        ======================================== -->
-  <section class="section" id="relayo-walkthrough" style="background: #FFFFFF;">
+  <section class="section" id="relayo-walkthrough" style="background: var(--color-surface-alt);">
     <div class="container">
       <h2 class="section-title">AI that grows sales and service.</h2>
-      <p class="walkthrough__subtitle">
+      <p class="walkthrough__subtitle" style="color: var(--color-muted); text-align: center; margin-bottom: var(--spacing-2xl);">
         Relayo's AI Employee helps businesses convert more leads, book more appointments, and follow up on sales and service with minimal effort.
       </p>
 
@@ -696,6 +402,18 @@
           </div>
         </div>
       </div>
+
+      <!-- CTA Button -->
+      <div class="walkthrough__cta">
+        <a href="#demo" class="btn btn--animated-pill">
+          <span class="btn__text">Watch a demo</span>
+          <span class="btn__circle">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -704,13 +422,13 @@
        ======================================== -->
 
   <!-- reveal: Section 1 - Handle customer service end-to-end -->
-  <section class="reveal-section reveal-section--hero" data-reveal id="hero-service" style="background: #f0eef6;">
+  <section class="reveal-section reveal-section--hero" data-reveal id="hero-service" style="background: #FFFFFF;">
     <div class="reveal-inner">
       <div class="container">
-        <div class="conduit-hero-box">
-          <div class="conduit-hero-box__content">
-            <h2 class="conduit-hero-box__title">Handle customer service end-to-end</h2>
-            <p class="conduit-hero-box__description">
+        <div class="conduit-section__content" style="text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+          <div style="max-width: 900px;">
+            <h2 class="conduit-section__title" style="font-size: clamp(2rem, 4vw, 2.5rem); margin-bottom: var(--spacing-md);">Handle customer service end-to-end</h2>
+            <p class="conduit-section__description" style="font-size: 1.125rem; max-width: 100%; color: var(--color-muted);">
               Relayo AI keeps your team focused by intelligently managing communications and escalating only the critical moments.
             </p>
           </div>
@@ -720,7 +438,7 @@
   </section>
 
   <!-- reveal: Section 2 - Build your workflows -->
-  <section class="reveal-section conduit-style-section" data-reveal id="define-processes" style="background: #f0eef6;">
+  <section class="reveal-section" data-reveal id="define-processes" style="background: #F7F9FC;">
     <div class="reveal-inner">
       <div class="container">
         <div class="conduit-section__content">
@@ -779,7 +497,7 @@
   </section>
 
   <!-- reveal: Section 3 - Track what matters -->
-  <section class="reveal-section conduit-style-section" data-reveal id="feel-impact" style="background: #f0eef6;">
+  <section class="reveal-section" data-reveal id="feel-impact" style="background: #FFFFFF;">
     <div class="reveal-inner">
       <div class="container">
       <div class="conduit-section__content conduit-section__content--reverse">
@@ -856,7 +574,7 @@
   </section>
 
   <!-- reveal: Section 4 - One inbox, total control -->
-  <section class="reveal-section conduit-style-section" data-reveal id="unified-inbox" style="background: #f0eef6;">
+  <section class="reveal-section" data-reveal id="unified-inbox" style="background: #F7F9FC;">
     <div class="reveal-inner">
       <div class="container">
       <div class="conduit-section__content">
