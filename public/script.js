@@ -950,6 +950,55 @@
   init();
 
   /**
+   * MOBILE MENU TOGGLE
+   * Handle hamburger menu for mobile navigation
+   */
+  function initMobileMenu() {
+    const staticToggle = document.getElementById('static-menu-toggle');
+    const floatingToggle = document.getElementById('floating-menu-toggle');
+    const staticNav = document.getElementById('static-nav');
+    const floatingNav = document.getElementById('floating-nav');
+
+    function toggleMenu(toggle, nav) {
+      if (!toggle || !nav) return;
+
+      toggle.addEventListener('click', () => {
+        const isOpen = nav.classList.contains('is-open');
+        nav.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', !isOpen);
+      });
+    }
+
+    // Initialize both menus
+    toggleMenu(staticToggle, staticNav);
+    toggleMenu(floatingToggle, floatingNav);
+
+    // Close menu when clicking on nav links
+    const allNavLinks = document.querySelectorAll('.header__link');
+    allNavLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        staticNav?.classList.remove('is-open');
+        floatingNav?.classList.remove('is-open');
+        staticToggle?.setAttribute('aria-expanded', 'false');
+        floatingToggle?.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.header')) {
+        staticNav?.classList.remove('is-open');
+        floatingNav?.classList.remove('is-open');
+        staticToggle?.setAttribute('aria-expanded', 'false');
+        floatingToggle?.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
+  // Initialize mobile menu
+  initMobileMenu();
+
+  /**
    * PERFORMANCE OPTIMIZATION
    * Log performance metrics in development
    */

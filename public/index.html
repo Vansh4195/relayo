@@ -69,13 +69,19 @@
     <nav class="header__container" role="navigation" aria-label="Primary">
       <a href="/" class="header__logo" aria-label="Relayo Home">Relayo</a>
 
-      <ul class="header__nav">
+      <ul class="header__nav" id="floating-nav">
         <li><a href="#features" class="header__link">Features</a></li>
         <li><a href="#industries" class="header__link">Industries</a></li>
         <li><a href="#customers" class="header__link">Customers</a></li>
         <li><a href="#pricing" class="header__link">Pricing</a></li>
         <li><a href="#resources" class="header__link">Resources</a></li>
       </ul>
+
+      <button class="header__menu-toggle" id="floating-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none">
+          <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
 
       <a href="/login" class="btn btn--primary btn--sm header__cta">Sign In</a>
     </nav>
@@ -88,13 +94,19 @@
     <nav class="header__container" role="navigation" aria-label="Primary">
       <a href="/" class="header__logo" aria-label="Relayo Home">Relayo</a>
 
-      <ul class="header__nav">
+      <ul class="header__nav" id="static-nav">
         <li><a href="#features" class="header__link">Features</a></li>
         <li><a href="#industries" class="header__link">Industries</a></li>
         <li><a href="#customers" class="header__link">Customers</a></li>
         <li><a href="#pricing" class="header__link">Pricing</a></li>
         <li><a href="#resources" class="header__link">Resources</a></li>
       </ul>
+
+      <button class="header__menu-toggle" id="static-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none">
+          <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
 
       <a href="/login" class="btn btn--primary btn--sm header__cta">Sign In</a>
     </nav>
